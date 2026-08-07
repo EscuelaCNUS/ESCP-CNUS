@@ -72,7 +72,7 @@ export default function Footer() {
       <div className="max-w-[1680px] mx-auto px-4 tablet:px-7.5 tablet:gap-5 laptop:px-20 desktop:px-6 mt-16 pt-8 border-t border-gray-600 flex flex-col tablet:flex-row items-center justify-between text-[16px] text-gray-400">
         <p className="text-center tablet:text-left tablet:mr-2">© {new Date().getFullYear()} Escuela CNUS de Sindicalismo Sociopolítico | Todos los derechos reservados.</p>
         <div className="mt-4 tablet:mt-0">
-          <Link href="/" className="hover:text-white transition">Políticas de privacidad</Link>
+          <Link href="/politica-de-privacidad" className="hover:text-white transition">Política de privacidad</Link>
         </div>
       </div>
     </footer>
