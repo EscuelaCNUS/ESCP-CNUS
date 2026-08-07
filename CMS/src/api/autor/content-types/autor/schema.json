@@ -1,0 +1,38 @@
+{
+  "kind": "collectionType",
+  "collectionName": "autores",
+  "info": {
+    "singularName": "autor",
+    "pluralName": "autores",
+    "displayName": "Autor",
+    "description": "Autores de artículos y programas"
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "attributes": {
+    "nombre": {
+      "type": "string",
+      "required": true
+    },
+    "apellido": {
+      "type": "string"
+    },
+    "email": {
+      "type": "email",
+      "unique": true
+    },
+    "cargo": {
+      "type": "string"
+    },
+    "biografia": {
+      "type": "text"
+    },
+    "avatar": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": ["images"]
+    }
+  }
+}

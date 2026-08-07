@@ -1,0 +1,48 @@
+# ─── Node modules ─────────────────────────────────────────────────────────────
+node_modules/
+**/node_modules/
+
+# ─── Binarios grandes (no versionar) ─────────────────────────────────────────
+CNUS/cloudflared/cloudflared.exe
+**/cloudflared.exe
+
+# ─── Frontend (CNUS) ──────────────────────────────────────────────────────────
+CNUS/.next/
+CNUS/out/
+CNUS/.env.local
+CNUS/.env*.local
+cnus/.next/
+cnus/out/
+cnus/.env.local
+cnus/.env*.local
+
+# ─── CMS (Strapi) ─────────────────────────────────────────────────────────────
+CMS/.tmp/
+CMS/build/
+CMS/exports/
+CMS/dist/
+CMS/.strapi/
+CMS/.env
+CMS/.env.*
+
+# ─── OS & Editores ────────────────────────────────────────────────────────────
+.DS_Store
+Thumbs.db
+desktop.ini
+.vscode/settings.json
+.idea/
+
+# ─── Logs ─────────────────────────────────────────────────────────────────────
+*.log
+npm-debug.log*
+
+# ─── Archivos temporales de Word ──────────────────────────────────────────────
+~$*
+
+# ─── Documentos de trabajo (no van al repo) ───────────────────────────────────
+CNUS/documentos/
+CNUS/public/imagenes/*.pdf
+
+# ─── Configuración local de herramientas ──────────────────────────────────────
+# Conector MCP de Supabase: cada quien lo configura y autoriza por su cuenta.
+.mcp.json

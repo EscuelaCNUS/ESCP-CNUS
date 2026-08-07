@@ -1,0 +1,39 @@
+{
+  "kind": "collectionType",
+  "collectionName": "debates",
+  "info": {
+    "singularName": "debate",
+    "pluralName": "debates",
+    "displayName": "Debate",
+    "description": "Debate activo en la sección Articulando"
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "attributes": {
+    "pregunta": {
+      "type": "string",
+      "required": true
+    },
+    "slug": {
+      "type": "uid",
+      "targetField": "pregunta",
+      "required": true
+    },
+    "imagen_portada": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": ["images"]
+    },
+    "archivo_media": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": ["images", "videos"]
+    },
+    "video_url": {
+      "type": "string"
+    }
+  }
+}

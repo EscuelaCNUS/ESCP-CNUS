@@ -1,0 +1,31 @@
+{
+  "kind": "collectionType",
+  "collectionName": "categorias",
+  "info": {
+    "singularName": "categoria",
+    "pluralName": "categorias",
+    "displayName": "Categoría",
+    "description": "Categorías de artículos"
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "attributes": {
+    "nombre": {
+      "type": "string",
+      "required": true
+    },
+    "slug": {
+      "type": "uid",
+      "targetField": "nombre",
+      "required": true
+    },
+    "descripcion": {
+      "type": "text"
+    },
+    "orden": {
+      "type": "integer",
+      "default": 0
+    }
+  }
+}

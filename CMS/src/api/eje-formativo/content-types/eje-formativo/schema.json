@@ -1,0 +1,40 @@
+{
+  "kind": "collectionType",
+  "collectionName": "eje_formativos",
+  "info": {
+    "singularName": "eje-formativo",
+    "pluralName": "eje-formativos",
+    "displayName": "Eje Formativo",
+    "description": "Ejes formativos del carrusel del Home"
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "attributes": {
+    "nombre": {
+      "type": "string",
+      "required": true
+    },
+    "slug": {
+      "type": "uid",
+      "targetField": "nombre",
+      "required": true
+    },
+    "descripcion": {
+      "type": "text"
+    },
+    "color": {
+      "type": "string"
+    },
+    "orden": {
+      "type": "integer",
+      "default": 0
+    },
+    "icono": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": ["images", "files"]
+    }
+  }
+}

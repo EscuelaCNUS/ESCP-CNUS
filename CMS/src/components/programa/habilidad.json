@@ -1,0 +1,14 @@
+{
+  "collectionName": "components_programa_habilidades",
+  "info": {
+    "displayName": "Habilidad",
+    "icon": "check",
+    "description": "Una competencia que el participante desarrolla en el curso"
+  },
+  "attributes": {
+    "nombre": {
+      "type": "string",
+      "required": true
+    }
+  }
+}

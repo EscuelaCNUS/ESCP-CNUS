@@ -1,0 +1,60 @@
+{
+  "kind": "singleType",
+  "collectionName": "hero_configs",
+  "info": {
+    "singularName": "hero-config",
+    "pluralName": "hero-configs",
+    "displayName": "Hero Config",
+    "description": "Configuración del hero del Home — video/imagen, título, botón y estadísticas"
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "attributes": {
+    "tipo_media": {
+      "type": "enumeration",
+      "enum": ["video", "imagen"],
+      "default": "video"
+    },
+    "archivo_media": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": ["images", "videos"]
+    },
+    "poster_media": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": ["images"]
+    },
+    "titulo": {
+      "type": "string"
+    },
+    "subtitulo": {
+      "type": "text"
+    },
+    "boton_texto": {
+      "type": "string",
+      "default": "Conocer más"
+    },
+    "boton_url": {
+      "type": "string",
+      "default": "/programas"
+    },
+    "programa_destacado": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::programa.programa"
+    },
+    "stat_1": {
+      "type": "string"
+    },
+    "stat_2": {
+      "type": "string"
+    },
+    "stat_3": {
+      "type": "string"
+    }
+  }
+}

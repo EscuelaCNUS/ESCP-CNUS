@@ -1,0 +1,25 @@
+{
+  "collectionName": "components_audiencia_slides",
+  "info": {
+    "displayName": "Slide de Audiencia",
+    "icon": "users",
+    "description": "Slide de la sección de audiencia del Home"
+  },
+  "attributes": {
+    "numero": {
+      "type": "string"
+    },
+    "titulo": {
+      "type": "string"
+    },
+    "descripcion": {
+      "type": "text"
+    },
+    "imagen": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": ["images"]
+    }
+  }
+}

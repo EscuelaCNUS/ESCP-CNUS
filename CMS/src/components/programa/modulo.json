@@ -1,0 +1,20 @@
+{
+  "collectionName": "components_programa_modulos",
+  "info": {
+    "displayName": "Módulo del programa",
+    "icon": "bulletList",
+    "description": "Un módulo o unidad del temario de un curso"
+  },
+  "attributes": {
+    "titulo": {
+      "type": "string",
+      "required": true
+    },
+    "descripcion": {
+      "type": "text"
+    },
+    "duracion": {
+      "type": "string"
+    }
+  }
+}

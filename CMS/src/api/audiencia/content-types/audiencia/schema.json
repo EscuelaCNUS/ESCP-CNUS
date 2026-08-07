@@ -1,0 +1,20 @@
+{
+  "kind": "singleType",
+  "collectionName": "audiencias",
+  "info": {
+    "singularName": "audiencia",
+    "pluralName": "audiencias",
+    "displayName": "Audiencia",
+    "description": "Slides de la sección de audiencia del Home"
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "attributes": {
+    "slides": {
+      "type": "component",
+      "repeatable": true,
+      "component": "audiencia.slides"
+    }
+  }
+}

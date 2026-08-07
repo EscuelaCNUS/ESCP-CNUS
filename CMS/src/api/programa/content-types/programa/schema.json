@@ -1,0 +1,77 @@
+{
+  "kind": "collectionType",
+  "collectionName": "programas",
+  "info": {
+    "singularName": "programa",
+    "pluralName": "programas",
+    "displayName": "Programa",
+    "description": "Cursos y programas de formación"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "titulo": {
+      "type": "string",
+      "required": true
+    },
+    "slug": {
+      "type": "uid",
+      "targetField": "titulo",
+      "required": true
+    },
+    "descripcion": {
+      "type": "text"
+    },
+    "imagen": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": ["images"]
+    },
+    "modalidad": {
+      "type": "enumeration",
+      "enum": ["Virtual", "Presencial", "Hibrido"],
+      "default": "Virtual"
+    },
+    "duracion": {
+      "type": "string"
+    },
+    "destacado": {
+      "type": "boolean",
+      "default": false
+    },
+    "eje": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::eje-formativo.eje-formativo"
+    },
+    "instructor": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::autor.autor"
+    },
+    "objetivos": {
+      "type": "text"
+    },
+    "dirigido_a": {
+      "type": "text"
+    },
+    "fecha_inicio": {
+      "type": "date"
+    },
+    "fecha_fin": {
+      "type": "date"
+    },
+    "modulos": {
+      "type": "component",
+      "repeatable": true,
+      "component": "programa.modulo"
+    },
+    "habilidades": {
+      "type": "component",
+      "repeatable": true,
+      "component": "programa.habilidad"
+    }
+  }
+}
